@@ -19,8 +19,17 @@ install at least the following:
 sudo apt install python3-gi gir1.2-ges-1.0 ges1.0-tools python3-intervaltree
 ```
 
+```
+sudo dnf install python3-gobject python-intervaltree
+```
+
+
 You may also want to install the [Pitivi video
 editor](http://www.pitivi.org/) to tweak the result before rendering:
+
+```
+nix-shell -p pitivi
+```
 
 ```
 sudo apt install pitivi
@@ -38,6 +47,10 @@ The `presentation_url` should be a full URL containing the string
 `/playback/presentation/2.0/playback.html?meetingId=`.  This will
 download the presentation metadata, video footage and slides.
 
+test url:
+```
+https://conf2.rusoil.net/playback/presentation/2.0/playback.html?meetingId=c847ac901bd403004e7c45a81a3857080f8364ed-1680584243598
+```
 
 ## Create a GES project
 
