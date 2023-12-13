@@ -20,7 +20,7 @@ sudo apt install python3-gi gir1.2-ges-1.0 ges1.0-tools python3-intervaltree
 ```
 
 ```
-sudo dnf install python3-gobject python-intervaltree
+sudo dnf install python3-gobject python-intervaltree gst-editing-services
 ```
 
 
@@ -51,7 +51,9 @@ test url:
 ```
 https://conf2.rusoil.net/playback/presentation/2.0/playback.html?meetingId=c847ac901bd403004e7c45a81a3857080f8364ed-1680584243598
 ```
-
+```
+./download.py https://conf2.rusoil.net/playback/presentation/2.0/playback.html?meetingId=c847ac901bd403004e7c45a81a3857080f8364ed-1680584243598 outdir
+```
 ## Create a GES project
 
 The second script combines the downloaded assets into a GStreamer
